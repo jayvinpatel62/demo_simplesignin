@@ -1,0 +1,49 @@
+@media screen and (max-width: 1199px){
+    .btns-navigation{
+        max-width: var(--_max-size);
+        gap:20px;
+    }
+    .qrCodeBox{
+        display: none;
+    }
+
+    .sections{
+        max-width: 80%;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    .footer-wrapper{
+        flex-direction:row !important;
+    }
+
+    .btns-navigation{
+        max-width: 100%;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right:0;
+        top: 50%;
+        transform: translate(0, -50%);
+        .btn-prev{
+            left: -15px;
+        }
+        .btn-next{
+            right: -15px;
+        }
+    }
+
+    .btn-big{
+        min-height: var(--_btn-height);
+        max-width: var(--_btn-width);
+        flex-direction: column;
+        .icon{
+            font-size: 3rem !important;
+        }
+    }
+    .sections{
+        max-width: 300px;
+    }
+    
+}
